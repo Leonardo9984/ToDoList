@@ -11,7 +11,7 @@ body, html {
 }
 .titulo {
     width: 100%; height: 55px;
-    padding: 6px;
+    padding: 10px;
     background-color: rgb(255, 235, 50);
     text-align: center;
     color: rgb(70, 70, 70);
@@ -21,6 +21,9 @@ body, html {
     width: 100%; height: 57px;
     text-align: center;
     background-color: #f7f758;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 .input button {
     width: 10%; height: 32px;
@@ -36,17 +39,16 @@ body, html {
     background-color: green;
 }
 .input input {
-    width: 40%;
+    width: 40%; height: 32px;
     font-size: 19px;
     border: none;
     background-color: whitesmoke;
     padding: 8px;
-    position: sticky;
     margin: 8px;
     border-radius: 10px;
 }
 .prancheta {
-    width: 55vw; height: 100vh;
+    width: 55vw; height: 120vh;
     margin: 25px auto;
     padding: 10px;
     background-color: rgb(212, 136, 23);
@@ -58,9 +60,11 @@ section {
     margin: 20px auto;
 }
 .titulo-lista {
-    width: 100%; height: 30px;
+    width: 100%; height: 34px;
     border: none;
-    font-size: 22px;
+    margin: 10px 0 20px 0;
+    font-size: 30px;
+    font-style: extra-bold;
     text-align: center;
     padding: 20px 0 20px 0;
 }
@@ -69,7 +73,7 @@ ul {
     margin: 10px 20%;
 }
 ul li {
-    display: inline;
+    visibility: hidden;
 }
 ul button {
     width: 70px ; height: 30px;
