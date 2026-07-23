@@ -2,6 +2,7 @@ const input = document.getElementById("addList");
 const button = document.getElementById("confirmList");
 const list = document.querySelector("ul");
 
+window.onload = () => {alert("oi")}
 button.addEventListener("click", () => {
     let valor = input.value;
     if (valor == "") {
@@ -10,8 +11,10 @@ button.addEventListener("click", () => {
         return;
     }
         input.style.border = "none";
-        list.style.visibility = "visible";
-        const li = document.createElement("li");
-        li.textContent = valor;
-    
-})
+        
+        let li = document.createElement("li");
+        li.innerHTML = valor + "<button id='excluir'>X</button>";
+        list.appendChild(li);
+        input.value = "";
+    }
+);
